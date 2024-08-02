@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #5C6BC0;
+  --sub-color: #E8EAF6;
+  --gray-color: #e1e1e1;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.2);
+}
+html, body, #root {
+  font-size: 14px;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+button {
+  cursor: pointer;
+}
+#root {
+  display: flex;
+  height: 100%;
+}
+
+/* lnb */
+.lnb {
+  position: relative;
+}
+.lnb .lnb-list {
+  width: 0;
+  height: 100vh;
+  background-color: var(--sub-color);
+  border-right: 1px solid;
+  border-color: var(--gray-color);
+  overflow: auto;
+  transition: width 0.3s;
+}
+.lnb .lnb-list.active {
+  width: 240px;
+  transition: width 0.3s;
+}
+.lnb .lnb-list a {
+  display: block;
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 39px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid;
+  border-color: var(--gray-color);
+}
+.lnb .lnb-list a:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.lnb .lnb-btn {
+  position: absolute;
+  left: calc(100% - 1px);
+  top: 40px;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  background-color: var(--sub-color);
+  border: 1px solid;
+  border-left: none;
+  border-color: var(--gray-color);
+  border-radius: 0 4px 4px 0;
+}
+.lnb .lnb-btn:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 40px 60px;
+  overflow: auto;
+}
+
+/* button */
+.btn {
+  width: auto;
+  height: 32px;
+  padding: 0 8px;
+  font-size: 14px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 4px;
+  color: var(--white-color);
+}
+
+/* input */
+.inp-box {
+  display: flex;
+  gap: 8px;
+}
+.inp-box input[type="text"] {
+  height: 32px;
+  padding: 0 8px;
+  background-color: var(--white-color);
+  border: 1px solid;
+  border-color: var(--gray-color);
+  border-radius: 4px;
+}
+.inp-box input[type="text"]:focus {
+  background-color: var(--sub-color);
+  outline: 1px solid;
+  outline-color: var(--main-color);
+}
+
+/* select */
+.sel-box {
+  display: flex;
+  gap: 8px;
+}
+.sel-box select {
+  height: 32px;
+  padding: 0 8px;
+  background-color: var(--white-color);
+  border: 1px solid;
+  border-color: var(--gray-color);
+  border-radius: 4px;
+}
+.sel-box select:focus {
+  background-color: var(--sub-color);
+  outline: 1px solid;
+  outline-color: var(--main-color);
+}

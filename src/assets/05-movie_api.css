@@ -1,0 +1,111 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 48px 32px;
+}
+.movie-list > li {
+  width: calc(25% - 24px);
+}
+.movie-list > li .img-box {
+  display: block;
+}
+.movie-list > li .img-box img {
+  width: 100%;
+}
+.movie-list > li .title {
+  font-size: 18px;
+}
+.movie-list > li:hover .title {
+  text-decoration: underline;
+}
+.movie-list > li .genre-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-list > li .genre-list li {
+  padding-right: 5px;
+  margin-right: 4px;
+  color: #757575;
+  position: relative;
+}
+.movie-list > li .genre-list li::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background-color: #e1e1e1;
+}
+.movie-list > li .genre-list li:last-child:after {
+  display: none;
+}
+.movie-list > li .summary {
+  margin-top: 8px;
+  display: -webkit-box;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+.movie-list > li:hover .summary {
+  text-decoration: underline;
+}
+
+.movie-detail {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 100%;
+  padding: 40px;
+  background: no-repeat 50% 50% / cover;
+}
+.movie-detail .img-box {
+  display: block;
+  height: 500px;
+}
+.movie-detail .img-box img {
+  width: auto;
+  height: 100%;
+}
+.movie-detail .movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 60px;
+  font-size: 16px;
+  background-color: #FFF;
+}
+.movie-detail .movie-info .title {
+  font-size: 24px;
+}
+.movie-detail .movie-info .genre-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-detail .movie-info .genre-list li {
+  padding-right: 9px;
+  margin-right: 8px;
+  color: #757575;
+  position: relative;
+}
+.movie-detail .movie-info .genre-list li::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background-color: #e1e1e1;
+}
+.movie-detail .movie-info .genre-list li:last-child:after {
+  display: none;
+}
+.movie-detail .movie-info .desc {
+  max-height: 200px;
+  overflow: auto;
+}
