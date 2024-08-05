@@ -44,12 +44,12 @@
 }
 .movie-list > li .summary {
   margin-top: 8px;
-  display: -webkit-box;
+  /* display: -webkit-box;
   white-space: normal;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;   */
 }
 .movie-list > li:hover .summary {
   text-decoration: underline;
