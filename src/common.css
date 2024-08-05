@@ -100,10 +100,19 @@ button {
   height: 32px;
   padding: 0 8px;
   font-size: 14px;
+  white-space: nowrap;
   background-color: var(--main-color);
   border: none;
   border-radius: 4px;
   color: var(--white-color);
+}
+.btn.small {
+  width: 20px;
+  height: 20px;
+}
+.btn.circle {
+  padding: 0;
+  border-radius: 50%;
 }
 
 /* input */

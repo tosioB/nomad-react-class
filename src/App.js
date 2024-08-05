@@ -7,7 +7,8 @@ import StudyUseEffectCleanUpFunction from './study/02-useEffect_cleanup_function
 import StudyTodoList_03 from './study/03-todoList'; // 03
 import StudyCoinApi from './study/04-coin_api'; // 04
 import StudyMovieApi from './study/05-movie_api'; // 05
-import StudyCustomHookFetch from './study/06-custom_hook_useFetch'; // 98
+import StudyCustomHookFetch from './study/06-custom_hook_useFetch'; // 06
+import StudyTodoList_07 from './study/07-todoList';
 
 // components folder
 
@@ -32,6 +33,7 @@ function App() {
           <Link to='/04-StudyCoinApi' title='04-coin_api'>04-coin_api</Link>
           <Link to='/05-StudyMovieApi' title='05-movie_api'>05-movie_api</Link>
           <Link to='/06-StudyCustomHookFetch' title='06-custom_hook_useFetch'>06-custom_hook_useFetch</Link>
+          <Link to='/07-StudyTodoList_07' title='07-todoList'>07-todoList</Link>
         </div>
         <LnbBtn lnbShow={lnbShow} handleLnbToggle={handleLnbToggle} />
       </div>
@@ -46,6 +48,7 @@ function App() {
         <Route path='/04-StudyCoinApi' element={<StudyCoinApi />} />
         <Route path='/05-StudyMovieApi' element={<StudyMovieApi />} />
         <Route path='/06-StudyCustomHookFetch' element={<StudyCustomHookFetch />} />
+        <Route path='/07-StudyTodoList_07' element={<StudyTodoList_07 />} />
 
         {/* routes folder */}
         <Route path='/05-StudyMovieApi/detail/:id' element={<StudyMovieApiDetail />} />

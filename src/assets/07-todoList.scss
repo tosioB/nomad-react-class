@@ -1,0 +1,51 @@
+.todo-list-wrap {
+  max-width: 360px;
+  margin: 0 auto;
+  form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .inp-box {
+      width: 100%;
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+  }
+  .todo-list {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+      border-bottom: 1px solid #e1e1e1;
+      .content {
+        width: 100%;
+        position: relative;
+        &.complete {
+          text-decoration: line-through;
+        }
+        .inp-box {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: calc(100% - 8px);
+          input[type="text"] {
+            width: 100%;
+          }
+          .cancel-btn {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .btn-box {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+}
